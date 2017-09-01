@@ -92,7 +92,7 @@ static void pwm_kblight_init(void)
 		pwm_set_duty(PWM_CH_KBLIGHT, prev->kblight_percent);
 	} else {
 		/* Enable keyboard backlight control, turned down */
-		pwm_set_duty(PWM_CH_KBLIGHT, 0);
+		pwm_set_duty(PWM_CH_KBLIGHT, 75);
 		pwm_enable(PWM_CH_KBLIGHT, 1);
 	}
 }
